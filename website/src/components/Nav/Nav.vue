@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-black">
-      <nav class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
+    <div class="bg-gray-800">
+      <nav class="container-fluid px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between">
           <router-link to="/" class="text-xl font-bold text-white md:text-2xl hover:text-blue-400">
             Logo
@@ -15,39 +15,40 @@
           </div>
         </div>
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-        <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
+        <transition name="slide-down">
+        <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x- md:mt-0">
             <router-link 
-            to="/"
-            class="text-sm font-bold text-white hover:text-blue-400">
+            to="/" @click.native="closeMobileMenu"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
             Home
         </router-link>
         <router-link 
-            to="/about"
-            class="text-sm font-bold text-white hover:text-blue-400">
+            to="/about" @click.native="closeMobileMenu"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
             About
         </router-link>
         <router-link 
-            to="/services"
-            class="text-sm font-bold text-white hover:text-blue-400">
+            to="/services" @click.native="closeMobileMenu"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
             Services
         </router-link>   
         <router-link 
-            to="/portfolio"
-            class="text-sm font-bold text-white hover:text-blue-400">
+            to="/portfolio" @click.native="closeMobileMenu"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
             Portfolio
         </router-link>     
         <router-link 
-            to="/expertise"
-            class="text-sm font-bold text-white hover:text-blue-400">
+            to="/expertise" @click.native="closeMobileMenu"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
             Expertise
         </router-link>        
         <router-link 
-            to="/contact"
-            class="text-sm font-bold text-white hover:text-blue-400">
+            to="/contact" @click.native="closeMobileMenu"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
             Contact
         </router-link>
-
         </ul>
+        </transition>
       </nav>
     </div>
   </template>
@@ -58,7 +59,14 @@
       return {
         showMenu: false,
       };
-    },
+    },  
+    methods: {
+    closeMobileMenu() {
+      this.showMenu = false;
+    }
+  }  
   };
   </script>
+  
+
   
