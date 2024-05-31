@@ -23,34 +23,34 @@
     </div>
 </div>
 <div class="container mx-auto my-4">
-    <div class="grid grid-cols-2 gap-4 flex">
+    <div class="grid grid-cols-3 gap-4 flex">
         <div class="flex justify-center">01</div>
         <div class="flex justify-center">02</div>
+        <div class="flex justify-center">03</div>
     </div>
 </div><div class="container mx-auto my-4">
-    <div class="grid grid-cols-2 gap-4 flex">
+    <div class="grid grid-cols-4 gap-4 flex">
         <div class="flex justify-center">01</div>
         <div class="flex justify-center">02</div>
+        <div class="flex justify-center">03</div>
+        <div class="flex justify-center">04</div>
     </div>
 </div><div class="container mx-auto my-4">
-    <div class="grid grid-cols-2 gap-4 flex">
+    <div class="grid grid-cols-5 gap-4 flex">
         <div class="flex justify-center">01</div>
         <div class="flex justify-center">02</div>
+        <div class="flex justify-center">03</div>
+        <div class="flex justify-center">04</div>
+        <div class="flex justify-center">05</div>
     </div>
 </div><div class="container mx-auto my-4">
-    <div class="grid grid-cols-2 gap-4 flex">
+    <div class="grid grid-cols-6 gap-6 flex">
         <div class="flex justify-center">01</div>
         <div class="flex justify-center">02</div>
-    </div>
-</div><div class="container mx-auto my-4">
-    <div class="grid grid-cols-2 gap-4 flex">
-        <div class="flex justify-center">01</div>
-        <div class="flex justify-center">02</div>
-    </div>
-</div><div class="container mx-auto my-4" id="abput">
-    <div class="grid grid-cols-2 gap-4 flex">
-        <div class="flex justify-center">01</div>
-        <div class="flex justify-center">02</div>
+        <div class="flex justify-center">03</div>
+        <div class="flex justify-center">04</div>
+        <div class="flex justify-center">05</div>
+        <div class="flex justify-center">06</div>
     </div>
 </div>
 
